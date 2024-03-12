@@ -1,7 +1,7 @@
-public class Main {
+public class PasswordValidator {
 
     public static boolean isValidPassword(String password) {
-        return password != null && lengthIsatLeast8 (password)  && containsDigits(password) && containsUpperCase(password) && containsLowerCase(password);
+        return password != null && lengthIsatLeast8 (password)  && containsDigits(password) && containsUpperCase(password) && containsLowerCase(password) && containsCommonPasswords(password);
     }
 
     public static boolean lengthIsatLeast8(String password) {
@@ -42,8 +42,17 @@ public class Main {
         System.out.println("Password must contain LowerCase letters");
         return false;
     }
+
+    public static boolean containsCommonPasswords(String password) {
+        String commonPassword = ("Password1");
+            if (!password.equals(commonPassword)) {
+                return true;
+            }
+        System.out.println("Password is CommonPasswords!");
+        return false;
+    }
     public static void main(String[] args) {
-        String password = "L555llllllllllllllll";
+        String password = "Password1";
 
         if (isValidPassword(password)) {
             System.out.println("Password is valid.");
