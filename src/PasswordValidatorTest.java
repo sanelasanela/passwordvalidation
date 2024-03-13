@@ -11,7 +11,7 @@ class PasswordValidatorTest {
 
     @Test
     void lengthIsatLeast8() {
-        assertTrue(PasswordValidator.lengthIsatLeast8("Sellllllllllll3"));
+        assertTrue(PasswordValidator.lengthIsAtLeast8("Sellllllllllll3"));
     }
 
     @Test
