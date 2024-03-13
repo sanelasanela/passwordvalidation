@@ -63,6 +63,7 @@ public class PasswordValidator
         System.out.println("Password is weak, try something else!");
         return false;
     }
+
     public static void main(String[] args)
     {
         String password = "Password1";
