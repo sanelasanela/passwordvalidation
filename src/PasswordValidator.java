@@ -48,7 +48,7 @@ public class PasswordValidator {
             if (!password.equals(commonPassword)) {
                 return true;
             }
-        System.out.println("Password is CommonPasswords!");
+        System.out.println("Password is weak, try something else!");
         return false;
     }
     public static void main(String[] args) {
